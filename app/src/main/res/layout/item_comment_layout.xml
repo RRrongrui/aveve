@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <spfworld.spfworld.widget.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:paddingBottom="5dp">
+
+
+        <spfworld.spfworld.widget.percent.view.CircleImageView
+            android:id="@+id/iv"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="15dp"
+            android:src="@mipmap/person_head" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@+id/iv"
+            android:text="钓客"
+            android:textColor="#292b2a"
+            android:textSize="12sp" />
+
+
+    </spfworld.spfworld.widget.percent.PercentRelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="5dp"
+        android:text="本策划出查收吃草丛擦我好愁配合矮搓好"
+        android:layout_marginLeft="50dp"
+        android:textColor="#353638"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+            <TextView
+            android:id="@+id/tv_floor_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="第"
+            android:textColor="#abaeb3"
+            android:textSize="12sp" />
+
+            <TextView
+            android:layout_toEndOf="@+id/tv_floor_two"
+            android:id="@+id/tv_floor2_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="1"
+            android:layout_marginLeft="2dp"
+            android:textColor="#abaeb3"
+            android:textSize="12sp" />
+
+
+            <TextView
+            android:layout_toEndOf="@+id/tv_floor2_two"
+            android:id="@+id/tv_floor3_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="楼"
+            android:layout_marginLeft="2dp"
+            android:textColor="#abaeb3"
+            android:textSize="12sp" />
+
+            <TextView
+            android:layout_toEndOf="@+id/tv_floor3_two"
+            android:id="@+id/tv_date_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="2016-8-29"
+            android:layout_marginLeft="10dp"
+            android:textColor="#abaeb3"
+            android:textSize="12sp" />
+            <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/bt_topic_coment"
+            android:src="@mipmap/img_reply"
+            android:layout_alignParentEnd="true"
+            />
+            </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" >
+
+        <spfworld.spfworld.widget.percent.view.MyListView
+            android:id="@+id/lv_user_comment_replys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

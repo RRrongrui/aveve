@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bg3" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/change_photo_picture_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="更换头像"
+                android:textColor="#4AB4E9"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/avatar_change_take_picture_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="拍照"
+                android:textColor="#4AB4E9"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f2f2f2" />
+
+        <LinearLayout
+            android:id="@+id/linear_photo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/avatar_change_choose_image_layout"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/bt_nobgd"
+                android:text="从相册中选择"
+                android:textColor="#4AB4E9"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#f3f3f3" />
+
+        <Button
+            android:id="@+id/ll_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@drawable/bt_nobgd"
+            android:text="取消"
+            android:textColor="#4AB4E9"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

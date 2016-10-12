@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_head"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="论坛"
+                android:textColor="#ffffff"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/iv_discuss"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/img_comment"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:clickable="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="43.3dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="17dp">
+
+            <TextView
+                android:id="@+id/tv_tie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="12dp"
+                android:text="看帖"
+                android:textColor="#41c9f1"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:background="#41c9f1" />
+           <LinearLayout
+               android:id="@+id/ll_pag"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:layout_marginRight="5dp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="智能排序"
+                android:textColor="@drawable/selector_textcolor_paixu"
+                android:textSize="17sp"
+                android:layout_weight="6.20" />
+
+            <ImageView
+                android:id="@+id/iv_smart"
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/img_down" />
+           </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="#e4e4e6" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

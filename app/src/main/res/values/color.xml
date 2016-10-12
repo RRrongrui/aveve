@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="paixu_two">#ffec02</color>
+    <color name="paixu_one">#8c8d91</color>
+    <color name="background">#FF000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFFFE400</color>
+    <color name="pink_red">#F63E2A</color>
+    <color name="red">#FF0000</color>
+    <color name="bulegray">#f0f0f0</color>
+    <color name="gray">#828282</color>
+    <color name="graylight">#cccccc</color>
+    <color name="orange">#FF6600</color>
+    <color name="orange_light">#fdaa0b</color>
+    <color name="gold">#ffd700</color>
+    <color name="event_merchandise_grid">#fdbf46</color>
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent">#90000000</color>
+    <color name="nearly_hard">#97000000</color>
+    <color name="font_focus">#D7F679</color>
+    <color name="gold_player">#F7F466</color>
+    <color name="whitetran">#87FFFFFF</color>
+    <color name="divider_line">#FF575757</color>
+    <color name="eventDtail_BM">#F98109</color>
+    <color name="listview_item_normal">#ffffff</color>
+    <color name="listview_item_pressed">#d4d4d4</color>
+    
+    <color name="message_checked">#90918f</color>
+    <color name="message_no_check">#323232</color>
+    
+    <color name="stick_color_bg">#e2e2e2</color>
+    <color name="detail_num">#53b1fb</color>
+    <color name="detail_num_text">#ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- app base color -->
+    <color name="app_color_main_deep">#4AB4E9</color>
+    <color name="app_color_main_lint">#419ECD</color>
+    <color name="app_text_main_text">#4A4A4A</color>
+    <color name="app_text_main_date">#919191</color>
+    <color name="app_text_msg_hint">#BCD52E</color>
+
+    <!-- base color -->
+    <color name="gray_hint">#EAE6E6</color>
+    <color name="gray_bg">#FAFAFA</color>
+
+    <!-- For settings framework -->
+    <color name="lighter_gray">#ddd</color>
+    <color name="darker_gray">#aaa</color>
+    <!-- base color -->
+    <!--时间、性别-->
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!-- 覆盖颜色 -->
+    <color name="bgColor_overlay">#60000000</color>
+
+
+    <!-- sweetdialog -->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#419ECD</color>
+    <color name="red_btn_bg_pressed_color">#4AB4E9</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#419ECD</color>
+    <color name="button_text_color">#419ECD</color>
+    <color name="base_bg_color">#F4F4F4</color>
+    <color name="text_gracy_light">#8E8E8E</color>
+
+    <!-- 商务合作联系方式的背景色 -->
+    <color name="businesscooperation_contact">#DFF3F9</color>
+    <color name="gracy_lighr">#F4F4F4</color>
+    <color name="blue">#00A2E8</color>
+    <color name="line_gracy">#C4C4C4</color>
+    <color name="click">#00A2E8</color>
+    <color name="onclick">#ffffff</color>
+    <color name="choice">#00A2E8</color>
+    <color name="text_gracy">#757575</color>
+
+    <!-- customer toast -->
+    <color name="toast_color">#ff2E76B9</color>
+    <color name="text_content_low">#999999</color>
+    <!--我的收藏-->
+    <color name="rad_shoucang">#00000000</color>
+    <color name="rad_text_color">#ffffff</color>
+    <color name="rad_text_color_no">#252525</color>
+
+    <color name="jinxin">#ff9202</color>
+    <color name="lishi">#3fcaf1</color>
+
+</resources>

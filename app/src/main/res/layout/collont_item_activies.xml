@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="116dp">
+
+    <ImageView
+        android:id="@+id/iv_img_acti"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignTop="@+id/textView_up"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_img_acti"
+        android:text="秋季国际登山比赛"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/selector_bg_jinxin"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="进行时"
+        android:textColor="@drawable/selector_texclor_jinxin"
+        android:textSize="9sp"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/textView_up" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间："
+        android:layout_marginTop="10dp"
+        android:textColor="#8e8e8e"
+        android:textSize="13sp"
+        android:layout_below="@+id/textView_down"
+        android:layout_alignStart="@+id/textView_down"
+        android:id="@+id/textView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016.9.21"
+        android:textColor="#8e8e8e"
+        android:textSize="13sp"
+        android:id="@+id/tv_time_acti"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地点："
+        android:layout_marginTop="10dp"
+        android:textColor="#8e8e8e"
+        android:textSize="13sp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:id="@+id/textView6" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上海市闵行区泰宏路"
+        android:textColor="#8e8e8e"
+        android:textSize="13sp"
+        android:id="@+id/tv_arss"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_alignStart="@+id/tv_time_acti" />
+
+</RelativeLayout>

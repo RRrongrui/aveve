@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <ab.view.cropimage.CropImageView
+            android:id="@+id/crop_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"/>
+            <!--class="ab.view.cropimage.CropImageView" />-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gracy_lighr"
+        android:orientation="horizontal"
+        android:padding="5dip" >
+
+
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_acceptorder_cancel"
+            android:text="取消"
+            android:textColor="@color/choice" />
+
+        <Button
+            android:id="@+id/okBtn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector_main"
+            android:text="确认"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

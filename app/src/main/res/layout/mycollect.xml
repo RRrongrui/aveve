@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_head"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:id="@+id/activity_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true" >
+            <!-- 左边图标 -->
+            <Button
+                android:id="@+id/bu_user_collent_finsh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/img_left" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="收藏"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        >
+        <RadioGroup
+            android:layout_width="230dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:background="@mipmap/collet_navigation">
+            <RadioButton
+                android:id="@+id/rb_collent_frag_fond"
+                android:button="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="塘口"
+                android:checked="true"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@drawable/color_radiobutton"
+                android:background="@drawable/selector_rad_shoucang"/>
+            <RadioButton
+                android:id="@+id/rb_collent_frag_activies"
+                android:button="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="活动"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@drawable/color_radiobutton"
+                android:background="@drawable/selector_rad_shoucang"/>
+            <RadioButton
+                android:id="@+id/rb_collent_frag_tribune"
+                android:button="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="帖子"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@drawable/color_radiobutton"
+                android:background="@drawable/selector_rad_shoucang"/>
+            <RadioButton
+                android:id="@+id/rb_collent_frag_commodity"
+                android:button="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="商品"
+                android:gravity="center"
+                android:textSize="13sp"
+                android:textColor="@drawable/color_radiobutton"
+                android:background="@drawable/selector_rad_shoucang"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#dddddd"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/frag_collent_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

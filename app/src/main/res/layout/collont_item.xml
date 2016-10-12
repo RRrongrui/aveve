@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="96dp">
+
+    <ImageView
+        android:id="@+id/iv_img_tt"
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/textView_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/iv_img_tt"
+        android:text="吉立来 台钓箱 2016新款"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/iv_img_tt"
+        android:text="$ "
+        android:textColor="#ee4a49"
+        android:textSize="14sp"
+        android:id="@+id/textView4" />
+    <TextView
+        android:id="@+id/textView_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="108"
+        android:textColor="#ee4a49"
+        android:textSize="14sp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <LinearLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@mipmap/stero_item" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_shuliang"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="20"-->
+            <!--android:textColor="#8e8e8e"-->
+            <!--android:textSize="12sp" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

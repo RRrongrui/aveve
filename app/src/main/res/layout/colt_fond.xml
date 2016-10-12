@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="95dp"
+    android:padding="10dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/colt_pond_pic"
+        android:layout_width="96dp"
+        android:layout_height="76dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/colt_pond_name_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            android:text="雷公湖"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/colt_pond_mony"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#fe9d01"
+                android:text="111"/>
+            <TextView
+                android:id="@+id/colt_pond_long"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp"
+                android:textColor="#fe9d01"
+                android:text="元/天"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/colt_assed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#7d7f8c"
+                android:text="上海市平航区"/>
+            <!--<ImageView-->
+                <!--android:id="@+id/pond_fish_one"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/pond_fish_two"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/pond_fish_th"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/pond_fish_fo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"/>-->
+            <!--<ImageView-->
+                <!--android:id="@+id/pond_fish_five"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

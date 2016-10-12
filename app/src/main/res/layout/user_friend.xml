@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_head"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:id="@+id/activity_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:focusable="true" >
+            <!-- 左边图标 -->
+            <Button
+                android:onClick="onClick"
+                android:id="@+id/bu_user_data_finsh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/img_left" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="邀请好友"
+            android:textColor="#ffffff"
+            android:textSize="19sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_fr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/user_friend"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp" />
+        <TextView
+            android:id="@+id/tv_zhan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我们的程序员正在挑灯夜战努力建设中......"
+            android:textSize="12sp"
+            android:textColor="#3d3d3f"
+            android:layout_below="@+id/iv_fr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_zhan"
+            android:text="敬请期待！"
+            android:textSize="17sp"
+            android:textColor="#ff9304"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

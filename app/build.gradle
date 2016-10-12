@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '23.0.3'
+    defaultConfig {
+        applicationId "spfworld.spfworld"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile files('libs/xUtils-3.1.2.jar')
+    compile files('libs/gson-2.1.jar')
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/AMap3DMap_3.4.0_AMapLocation_2.8.0_20160811.jar')
+    compile 'com.jakewharton:butterknife:5.1.1'
+    compile files('libs/taobao-sdk-java-auto_1455552377940-20160607.jar')
+    compile files('libs/taobao-sdk-java-auto_1455552377940-20160607-source.jar')
+    compile files('libs/alipaySdk-20160825.jar')
+    compile files('libs/alipaySdk-20151103.jar')
+    compile 'com.android.support:recyclerview-v7:23.2.1'
+    compile files('libs/libammsdk.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/GifView.jar')
+}

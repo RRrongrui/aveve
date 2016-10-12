@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout1">
+
+
+    <ScrollView
+        android:id="@+id/topic_roll"
+        android:layout_below="@+id/v"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/topic_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <Button
+                    android:id="@+id/bu_topic_finsh"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@mipmap/rollback" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="主题帖"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/iv_share"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <CheckBox
+                    android:textSize="8dp"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:textColor="@drawable/selector_textcolor_guanzhu"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_share"
+                    android:text="关注"
+                    android:background="@drawable/selector_bg_guanzhu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v"
+                android:layout_below="@+id/topic_title"
+                android:background="#d0d0d0"
+                android:layout_width="match_parent"
+                android:layout_height="0.3dp"/>
+
+            <spfworld.spfworld.widget.percent.PercentRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="5dp">
+
+
+                <spfworld.spfworld.widget.percent.view.CircleImageView
+                    android:id="@+id/iv"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@mipmap/person_head" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="钓客"
+                    android:textColor="#292b2a"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:text="楼主"
+                    android:textColor="#ffffff"
+                    android:textSize="9sp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:layout_alignBottom="@+id/tv_title"
+                    android:layout_toRightOf="@+id/tv_title"
+                    android:background="@mipmap/build_backgroung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                android:id="@+id/tv_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/iv"
+                android:text="第"
+                android:textColor="#abaeb3"
+                android:textSize="12sp" />
+
+                <TextView
+                    android:layout_toEndOf="@+id/tv_floor"
+                    android:id="@+id/tv_floor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="1"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#abaeb3"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_toEndOf="@+id/tv_floor2"
+                    android:id="@+id/tv_floor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="楼"
+                    android:layout_marginLeft="2dp"
+                    android:textColor="#abaeb3"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_toEndOf="@+id/tv_floor3"
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/iv"
+                    android:text="2016-8-29"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#abaeb3"
+                    android:textSize="12sp" />
+
+            </spfworld.spfworld.widget.percent.PercentRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_tribune_title"
+                android:layout_marginTop="18dp"
+                android:layout_marginLeft="15dp"
+                android:text="阿斯大大大大释放多个地方共和国副书记李福科技示范基地刻录机 "
+                android:layout_marginRight="15dp"
+                android:textColor="#18191b"
+                android:textSize="23sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_tribune_data"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="阿斯大大大大释放多个地方共和国副书记李福科技示范基地刻录机 "
+                android:layout_marginRight="15dp"
+                android:textColor="#18191b"
+                android:textSize="17sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <spfworld.spfworld.widget.percent.view.MyGridView2
+                android:id="@+id/mGrid2"
+                android:verticalSpacing="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </spfworld.spfworld.widget.percent.view.MyGridView2>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_item_comment_hint"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_above="@+id/bottom_et"
+                    android:background="#d0d0d0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    >
+                    <Button
+                        android:id="@+id/btn_main_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="回复楼主"
+                        android:textColor="#999999"
+                        android:textSize="12sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true" />
+                    </RelativeLayout>
+                <View
+                    android:layout_above="@+id/bottom_ed"
+                    android:background="#d0d0d0"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"/>
+
+                <spfworld.spfworld.widget.percent.view.MyListView
+                    android:id="@+id/lv_tribune_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </spfworld.spfworld.widget.percent.view.MyListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

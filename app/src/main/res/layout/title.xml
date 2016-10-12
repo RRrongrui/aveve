@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="#26242f"
+    android:id="@+id/topbar" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:singleLine="true"
+        android:textColor="#FFF"
+        android:textSize="19sp"
+        android:ellipsize="end"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/title_left_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title_left_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:id="@+id/title_right_left_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:layout_toLeftOf="@+id/title_right_img"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"/>
+    <ImageButton
+        android:id="@+id/title_right_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="10dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+
+</RelativeLayout>

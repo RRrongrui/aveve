@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notfound_img">未找到该图片</string>
+
+    <!-- 设置界面退出当前app？ -->
+    <string name="warn">提示</string>
+    <string name="exit_user">是否注销登录?</string>
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="delete1">删除</string>
+
+
+    <string name="no_findimg">没有找到图片</string>
+
+    <string name="system_camera_not_found">未找到系统相机程序</string>
+</resources>

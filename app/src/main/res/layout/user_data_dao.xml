@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spfworld.spfworld.widget.percent.PercentLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/selector_head"
+        android:layout_height="50dp">
+    <RelativeLayout
+        android:id="@+id/activity_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        >
+        <!-- 左边图标 -->
+        <Button
+            android:id="@+id/bu_user_data_finsh"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/img_left" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="资料设置"
+        android:textColor="#ffffff"
+        android:textSize="19sp" />
+        <TextView
+            android:id="@+id/tv_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:layout_alignTop="@+id/activity_title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp" />
+
+    </RelativeLayout>
+    <spfworld.spfworld.widget.percent.PercentLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#eeeeee">
+            </LinearLayout>
+        <!--头像-->
+            <RelativeLayout
+                android:id="@+id/user_data"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="头像"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_touxi" />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@mipmap/img_right"
+                    android:id="@+id/iv_user_data"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignBottom="@+id/tv_touxi"
+                    android:layout_alignParentEnd="true" />
+
+                <spfworld.spfworld.widget.percent.view.CircleImageView
+                    android:id="@+id/id_headphoto"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:src="@mipmap/person_head"
+                    android:layout_marginEnd="29dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/iv_user_data" />
+            </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#eeeeee"></LinearLayout>
+
+        <!--昵称-->
+
+        <RelativeLayout
+            android:id="@+id/rl_nicheng"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_nicheng" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_right"
+                android:id="@+id/iv_r"
+                android:layout_alignBottom="@+id/tv_nicheng"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/tv_nicheng_fast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阎摩12"
+                android:textSize="14sp"
+                android:textColor="#919191"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/iv_r"
+                android:layout_alignBottom="@+id/iv_r" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dddddd" />
+
+        <!--性别-->
+        <RelativeLayout
+            android:id="@+id/rl_gengder"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_gengder" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_right"
+                android:id="@+id/iv_ri"
+                android:layout_alignBottom="@+id/tv_gengder"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="14sp"
+                android:textColor="#919191"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/iv_ri"
+                android:layout_alignBottom="@+id/iv_ri" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dddddd" />
+
+        <!--生日-->
+        <RelativeLayout
+            android:id="@+id/rl_brithday"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="生日"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_brithday" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_right"
+                android:id="@+id/iv_rio"
+                android:layout_alignBottom="@+id/tv_brithday"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/tv_time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1995-09-15"
+                android:textSize="14sp"
+                android:textColor="#919191"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/iv_rio"
+                android:layout_alignBottom="@+id/iv_rio" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dddddd" />
+
+        <!--城市-->
+        <RelativeLayout
+            android:id="@+id/rl_city"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="城市"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_city_user" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_right"
+                android:id="@+id/iv_rioy"
+                android:layout_alignBottom="@+id/tv_city_user"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/tv_city_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未填写"
+                android:textSize="14sp"
+                android:textColor="#919191"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/iv_rioy"
+                android:layout_alignBottom="@+id/iv_rioy" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dddddd" />
+
+        <!--签名-->
+        <RelativeLayout
+            android:id="@+id/rl_signature"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="签名"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_signature" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/img_right"
+                android:id="@+id/iv_rioyu"
+                android:layout_alignBottom="@+id/tv_signature"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/tv_signature1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未填写"
+                android:textSize="14sp"
+                android:textColor="#919191"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@+id/iv_rioyu"
+                android:layout_alignBottom="@+id/iv_rioyu" />
+        </RelativeLayout>
+
+
+
+    </spfworld.spfworld.widget.percent.PercentLinearLayout>
+
+</spfworld.spfworld.widget.percent.PercentLinearLayout>

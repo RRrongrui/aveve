@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@mipmap/photobutton"
+                android:id="@+id/button"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/edt_comments"
+                android:layout_width="260dp"
+                android:layout_height="35dp"
+                android:hint="我也来说一句"
+                android:background="@mipmap/bg_edt_white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="42dp"
+            android:layout_height="30dp"
+            android:text="发送"
+            android:gravity="center"
+            android:textColor="#3ec9f0"
+            android:textSize="12sp"
+            android:background="@drawable/buttonstyle"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    </LinearLayout>
+    <!--<Button-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_weigth="4"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_marginTop="6dp"-->
+        <!--android:background="@mipmap/photobutton"-->
+        <!--android:id="@+id/button" />-->
+
+
+    <!--<EditText-->
+        <!--android:layout_weigth="1"-->
+        <!--android:id="@+id/edt_comments"-->
+        <!--android:layout_width="268dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_marginLeft="5dp"-->
+        <!--android:hint="我也来说一句"-->
+        <!--android:background="@mipmap/bg_edt_white"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:singleLine="true"-->
+        <!--android:layout_alignTop="@+id/button"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_weigth="3"-->
+        <!--android:id="@+id/btn_send"-->
+        <!--android:layout_width="42dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:text="发送"-->
+        <!--android:textColor="#3ec9f0"-->
+        <!--android:textSize="12sp"-->
+        <!--android:background="@drawable/buttonstyle"-->
+        <!--android:layout_alignTop="@+id/edt_comments"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginEnd="10dp"/>-->
+
+</RelativeLayout>

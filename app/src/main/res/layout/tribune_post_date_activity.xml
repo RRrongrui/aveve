@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/titt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/bu_topic_post_finsh"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/rollback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发表"
+            android:textColor="#292b2a"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_clay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="完成"
+            android:layout_marginRight="20dp"
+            android:textColor="#43c9ef"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/titt2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/titt"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:hint="标题"
+            android:background="@null"
+            android:textColorHint="#bdc0c5"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="15dp"
+        android:background="#dddddd" />
+
+    <LinearLayout
+        android:id="@+id/ly_up_picy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/titt2"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <EditText
+                android:gravity="top"
+                android:hint="未填写"
+                android:background="@null"
+                android:layout_marginLeft="15dp"
+                android:textColorHint="#bdc0c5"
+                android:textSize="16sp"
+                android:id="@+id/et_post_essay"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                />
+            <TextView
+                android:id="@+id/tv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/et_post_essay"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10px"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dddddd" />
+            <RelativeLayout
+                android:id="@+id/rl_ccc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="22dp"
+                android:background="@mipmap/up_picture"
+                android:id="@+id/iView" />
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/site_bac"
+                android:layout_alignBottom="@+id/iView"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="22dp">
+                <ImageView
+                    android:id="@+id/iv_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/site"
+                    android:layout_weight="3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/tv_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上海市浦东"
+                    android:textColor="#a1a1a1"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="15dp"
+            android:background="#dddddd" />
+    <spfworld.spfworld.widget.percent.view.NoScrollGridView
+            android:id="@+id/gv_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:horizontalSpacing="3dp"
+            android:numColumns="4"
+            android:layout_marginTop="15dp"
+            android:scrollbars="none"
+            android:verticalSpacing="5dp" >
+
+    </spfworld.spfworld.widget.percent.view.NoScrollGridView>
+    </LinearLayout>
+</RelativeLayout>
